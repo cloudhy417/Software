@@ -3,10 +3,10 @@
 	<arg name="local" default="false" doc="true to launch locally on laptop. false to launch of vehicle"/>
 
 	<!-- to do: use argument to definie package name -->
-	<arg name="pkg_name" default="face_detector_GG" doc="name of the package"/>
+	<arg name="pkg_name" default="face_detector_gg" doc="name of the package"/>
 
 	<!-- to do: use argument to definie package name -->
-	<arg name="node_name" default="face_detector_GG" doc="name of the node"/>
+	<arg name="node_name" default="face_detector_gg" doc="name of the node"/>
 
 	<group ns="$(arg veh)">
 	<!-- Local -->

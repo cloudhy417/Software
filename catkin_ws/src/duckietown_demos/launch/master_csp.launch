@@ -242,13 +242,6 @@
 
 	<!-- Start Lane Following -->
 	<group if="$(arg lane_following)">
-        
-		<group if="$(arg /lane_following/line_detection)">
-			<remap from="object_recognition_node/image" to="camera_node/image/compressed"/>
-			<include file="$(find object_recognition)/launch/object_recognition_node.launch">
-				<arg name="veh" value="$(arg veh)"/>
-			</include>	
-		</group>
 
 		<!-- Line Detector -->
 		<group if="$(arg /lane_following/line_detection)">
@@ -281,7 +274,7 @@
 		<!-- Lane Filter -->
 		<group if="$(arg /lane_following/lane_filter)">
 			<remap from="lane_filter_node/segment_list" to="ground_projection/lineseglist_out"/>
-			<include file="$(find lane_filter)/launch/lane_filter_node.launch">
+			<include file="$(find lane_filter)/launch/lane_filter_node_csp.launch">
 				<arg name="veh" value="$(arg veh)"/>
 				<arg name="config" value="$(arg config)"/>
 				<arg name="param_file_name" value="$(arg param_file_name)"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>face_detector_GG</name>
+  <name>face_detector_gg</name>
   <version>0.0.0</version>
-  <description>The face_detector_GG package</description>
+  <description>The face_detector_gg package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
